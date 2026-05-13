@@ -29,7 +29,8 @@ def main():
 
         screen.fill("black")
         player.draw(screen)
-        
+        player.update(dt)
+
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000  # Limit to 60 FPS and get delta time in seconds
